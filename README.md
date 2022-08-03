@@ -25,7 +25,7 @@ This version is deigned to be more manufacturable by hobbyists, with improoved p
 
 <br />
 
->**Disclaimer**: `Positron V3B` is still under heavy and rapid development, and things **will change**, if you find somthing that could be improoved, either submit a PR or an Issue in this Git page, or contact harryloud#8251 or AudiotroniX#0585 on Discord.
+>**Disclaimer**: `Positron V3B` is still under heavy and rapid development, and things **will change**, if you find somthing that could be improoved, either submit a PR or an Issue in this Git page, or contact me on Discord (harryloud#8251).
 
 
 

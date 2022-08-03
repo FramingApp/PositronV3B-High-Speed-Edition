@@ -1,35 +1,33 @@
-[![GitHub issues](https://img.shields.io/github/issues/KRALYN/PositronV3?style=plastic)](https://github.com/KRALYN/PositronV3/issues) [![GitHub forks](https://img.shields.io/github/forks/KRALYN/PositronV3?style=plastic)](https://github.com/KRALYN/PositronV3/network) [![GitHub stars](https://img.shields.io/github/stars/KRALYN/PositronV3?style=plastic)](https://github.com/KRALYN/PositronV3/stargazers)
-
 <p align="center">
    <img width="550px" height="150px" title="Logo" src="./Media%20and%20logos/Logos/Positron%20logo.svg">
 </p>
 
 ---
 
-# PositronV3
+# PositronV3**B**
 
-[Check out our Youtube to see it in action!](https://www.youtube.com/watch?v=X_QLxTVtyng)
+<!-- [Check out our Youtube to see it in action!](https://www.youtube.com/watch?v=X_QLxTVtyng)
 
-![alt text](https://github.com/KRLAYN/PositronV3/blob/main/Media%20and%20logos/Photos%20and%20renders/PV3%20with%20printsA.jpg?raw=true)
+![alt text](https://github.com/KRLAYN/PositronV3/blob/main/Media%20and%20logos/Photos%20and%20renders/PV3%20with%20printsA.jpg?raw=true) -->
 
-Upside-down, compact, portable, and super fast 3D printer - `Positron V3` has it all. A compact 3D printer that packs into a filament spool box, so you can take it anywhere you want. This design is looking at a 3D printer less like a stationary machine, but more like a powerful tool in a maker/inventor's tool kit. The printer deploys and folds up in less than 90 seconds, fits easily inside a bag, and prints at 200+mm/s.
+A modified version if the fantastic [PositronV3 Upside Down 3D Printer](https://github.com/KRLAYN/PositronV3).<br />
+This version is deigned to be more manufacturable by hobbyists, with improoved performance (infact prints faster).
+<br /><br />
+**Features**
+-  **No Machined Parts**, *except hotend*
+-  **No Synchromesh**, *uses kevlar string*
+-  Requires only Hand Hools and 3D printer
+-  Integrated PSU
 
-**Specs**: 
-- Max Print Speed: `250mm/s`
-- Max Travel Speed: `350mm/s`
-- Acceleration: `9800mm/s^2`
-- Build Volume: `180x185x180mm`
-- Weight: `2700-3100g`
-- Hotend max temp: `250C`
-- Build Plate Max temp: `90C`
-- Power supply: `19-24V; 150-220W`
+<br />
 
-> Do not treat this design as a finished product. Instead, please see it as a project to be improved upon. When you make this, if you find any improvements, please share it with the community! I could easely have overlooked things; Lets make this printer the best it can be!
+[BOM Link](https://docs.google.com/spreadsheets/d/1i8a5PYKq8QxL8bjgeb9Q3jwmtq4bS95erUoR0jqxsa8/edit?usp=sharing)
 
->**Disclaimer**: `Positron V3` design is a ***functional*** prototype, not a complete product. **There is absolutely no warranty, and you will make this design at your ***OWN*** risk. I will not be responsible for any damages associated with this design**. 
+<br />
 
-If you like the design, please consider supporting my work via [Patreon](https://www.patreon.com/KRALYN3D)
-Or make a donation through [Paypal](https://www.paypal.com/donate/?hosted_button_id=D6APYZU6RKY6S)
+>**Disclaimer**: `Positron V3B` is still under heavy and rapid development, and things **will change**, if you find somthing that could be improoved, either submit a PR or an Issue in this Git page, or contact me on Discord (harryloud#8251).
+
+
 
 # Licenses
 
@@ -38,7 +36,6 @@ Or make a donation through [Paypal](https://www.paypal.com/donate/?hosted_button
 **License usage**: `CC-BY`
 
 If you are manufacturing this 3D printer or a close derivative, please put `KRALYN Design Logo` visibily on your product and designate `KRALYN` as the inventor of this product. You can find the file inside the logos folder.
-If you made a profit from this design, please consider donating a portion to `KRALYN Design`. I will be exceedingly grateful.
 
 ***All hardware materials and designs provided here are licensed under the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) hardware license.
 All documentation, including the Wiki, is under the Creative Commons [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) license***.
@@ -46,5 +43,3 @@ All documentation, including the Wiki, is under the Creative Commons [CC-BY-SA-4
 <div align="center">
 <img src="./Media%20and%20logos/licenses/licenses.svg" width="300" alt="Open Licenses" />
 </div>
-
-[Top](#positronv3)

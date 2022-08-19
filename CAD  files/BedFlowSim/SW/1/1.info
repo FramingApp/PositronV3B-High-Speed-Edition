@@ -1,0 +1,223 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2018 SP0.0. Build: 3996
+                Computer name:   DESKTOP-HHFVBHF
+                User name:   harry
+                Processors:   Intel(R) Core(TM) i7-7660U CPU @ 2.50GHz
+                Memory:   8109 MB / 134217727 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.22000)
+                CAD version:   SOLIDWORKS 2018 SP0.1
+                CPU speed:   2496 MHz
+
+    General Info
+                Model:   200x200x3mmbed.SLDPRT
+                Project name:   85c isothermal natural convection
+                Project path:   C:\Users\harry\Dropbox\Harry Private\Positron3DPRinterBLDC\CAD  files\BedFlowSim\SW\1
+                Units system:   SI (m-kg-s)
+                Analysis type:   External (not exclude internal spaces)
+                Exclude cavities without flow conditions :   Off
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   On
+                Heat conduction in solids only:   Off
+                Radiation:   On
+                Time dependent:   Off
+                Gravitational effects:   On
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Humidity:   Off
+                Default roughness:   0 micrometer
+
+        Gravitational Settings
+                X component:   0 m/s^2
+                Y component:   -9.81 m/s^2
+                Z component:   0 m/s^2
+
+        Radiation
+                Default wall radiative surface:   Glass, pyrex
+                Radiation model:   Ray Tracing
+
+        Environment radiation
+                Environment temperature:   293.20 K
+                Spectrum:   Blackbody
+
+    Computational Domain
+
+        Size
+                X min:   -0.250 m
+                X max:   0.250 m
+                Y min:   -0.250 m
+                Y max:   0.250 m
+                Z min:   -0.250 m
+                Z max:   0.250 m
+
+    Goals
+
+        Point Goals
+
+            PG Heat Transfer Coefficient 1
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<1>
+                X:   0.100 m
+                Y:   0 m
+                Z:   2.776e-17 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 2
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<2>
+                X:   -4.163e-17 m
+                Y:   0 m
+                Z:   -0.100 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 3
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<3>
+                X:   -0.100 m
+                Y:   0 m
+                Z:   2.776e-17 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 4
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<4>
+                X:   -4.163e-17 m
+                Y:   0 m
+                Z:   0.100 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 5
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<5>
+                X:   0.100 m
+                Y:   0.003 m
+                Z:   2.776e-17 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 6
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<6>
+                X:   -4.163e-17 m
+                Y:   0.003 m
+                Z:   -0.100 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 7
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<7>
+                X:   -0.100 m
+                Y:   0.003 m
+                Z:   2.776e-17 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 8
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<8>
+                X:   -4.163e-17 m
+                Y:   0.003 m
+                Z:   0.100 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 9
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<9>
+                X:   0.100 m
+                Y:   0.002 m
+                Z:   0.100 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 10
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<10>
+                X:   -0.100 m
+                Y:   0.002 m
+                Z:   0.100 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 11
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<11>
+                X:   -0.100 m
+                Y:   0.002 m
+                Z:   -0.100 m
+                Use in convergence :   On
+
+            PG Heat Transfer Coefficient 12
+                Type:   Point Goal
+                Goal type:   Heat Transfer Coefficient
+                Coordinate system:   Global coordinate system
+                Name:   Edge<12>
+                X:   0.100 m
+                Y:   0.002 m
+                Z:   -0.100 m
+                Use in convergence :   On
+
+        Surface Goals
+
+            SG Min Heat Transfer Coefficient 1
+                Type:   Surface Goal
+                Goal type:   Heat Transfer Coefficient
+                Calculate:   Minimum value
+                Faces:   Face<4>, Face<5>, Face<3>, Face<1>, Face<2>, Face<6>
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            SG Av Heat Transfer Coefficient 1
+                Type:   Surface Goal
+                Goal type:   Heat Transfer Coefficient
+                Calculate:   Average value
+                Faces:   Face<4>, Face<5>, Face<3>, Face<1>, Face<2>, Face<6>
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            SG Max Heat Transfer Coefficient 1
+                Type:   Surface Goal
+                Goal type:   Heat Transfer Coefficient
+                Calculate:   Maximum value
+                Faces:   Face<4>, Face<5>, Face<3>, Face<1>, Face<2>, Face<6>
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            SG Heat Transfer Rate 1
+                Type:   Surface Goal
+                Goal type:   Heat Transfer Rate
+                Faces:   Face<4>, Face<5>, Face<3>, Face<1>, Face<2>, Face<6>
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+    General Info
+                Iterations:   0
+                CPU time:   0 s
+
+        Log
+                Mesh generation started	0:   11:56:10 , Aug 15
+                Mesh generation normally finished	0:   11:56:34 , Aug 15
+                Preparing data for calculation	0:   11:56:34 , Aug 15
+                Calculation started	0:   11:57:06 , Aug 15
+                Calculation finished	6:   11:58:45 , Aug 15

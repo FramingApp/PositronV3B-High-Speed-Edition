@@ -58,13 +58,13 @@ BottomLayer = np.argwhere(z<0.1)
 # SurfaceHeatFlux = np.append(SurfaceHeatFlux,SurfaceHeatFlux[TopLayer]+SurfaceHeatFlux[BottomLayer]) #combine top and bottom
 
 ##Plot top and bottom
-# fig = plt.figure()
-# ax = fig.add_subplot(111, projection='3d')
-# img = ax.scatter(x, y, z, c=SurfaceHeatFlux, cmap=plt.hot())
-# fig.colorbar(img)
-# ax.set_xlabel('x')
-# ax.set_ylabel('y')
-# ax.set_zlabel('z')
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+img = ax.scatter(x, y, z, c=SurfaceHeatFlux, cmap=plt.hot())
+fig.colorbar(img)
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_zlabel('z')
 
 
 
@@ -80,7 +80,8 @@ SurfaceHeatFluxProcessed = SurfaceHeatFluxProcessed/np.min(SurfaceHeatFluxProces
 #Clip
 #SurfaceHeatFluxProcessed = np.clip(SurfaceHeatFluxProcessed,0,6)
 
-SurfaceHeatFluxProcessed = SurfaceHeatFluxProcessed**0.35 ##scaled
+##Scale
+SurfaceHeatFluxProcessed = SurfaceHeatFluxProcessed**0.35 #<- Change as desired
 
 fig1 = plt.figure()
 ax1 = fig1.add_subplot(111, projection='3d')
@@ -91,11 +92,14 @@ ax1.set_ylabel('y')
 ax1.set_zlabel('Normalised heat flux')
 
 
-##SCALE XY COORDS FOR 3MM ELECTRODE ON EITHER EDGE AND 5MM ETCH GAP for 2 runner electrodes that do not contct the ITO (not perect I know but best option)
+##TRANSLATE AND SCALE XY COORDS FOR 3MM ELECTRODE ON EITHER EDGE AND 5MM ETCH GAP for 2 runner electrodes that do not contct the ITO
 electrode_width = 3 #mm
 runner_etch_gap = 5 #mm
 ypro = ypro * ((200-(2*3))/200)
 xpro = (xpro * ((200-runner_etch_gap)/200)) + (runner_etch_gap/2)
+
+
+
 
 
 #Generate large ammoutn of unform grid data points to pick the hex centers from later
@@ -105,14 +109,18 @@ yi = np.linspace(np.min(ypro), np.max(ypro), grid_size)
 xgrid, ygrid = np.meshgrid(xi, yi)
 SHP_Grid = griddata(np.c_[xpro.ravel(), ypro.ravel()], SurfaceHeatFluxProcessed.ravel(), (xgrid, ygrid))  # interpolates between points in your data
 
-#smooths the data
+
+
+
+#SMOOTH & CLIP THE GRID DATA
 SHP_Grid_Smoothed = gaussian_filter(SHP_Grid, sigma=7*grid_size/200) 
-SHP_Grid_Smoothed = np.clip(SHP_Grid_Smoothed,0,1.55)
+SHP_Grid_Smoothed = np.clip(SHP_Grid_Smoothed,0,1.55) #<- Change as desired,  max edges to center heat loss
+
+
 
 #renormalise for finding concentration of ITO per unit area
 #With 1 beeing all ITO, 0 beeing compeltley etched away, no area remaining
 ITOConcentration = (SHP_Grid_Smoothed/np.max(SHP_Grid_Smoothed))
-
 
 
 fig2, ax2 = plt.subplots(subplot_kw={"projection": "3d"})
@@ -127,7 +135,7 @@ W = 200/(steps)
 hex_centers, _ = create_hex_grid(nx=steps*2, #take too many and cut back later
                                  ny=steps*2,
                                  min_diam=W,
-                                 do_plot=True,
+                                 do_plot=False,
                                  align_to_origin=True)
 
 #Find closest point on the grid to each hex center (convert to the index space so value can be grabbed from ITOConcentration meshgrid)

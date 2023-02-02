@@ -1,5 +1,0 @@
-total heatloss over entire plate calulated to be:
-23.73W at 85c (radiation included)
-
-9.2w from the top
-12.9w from the bottom
